@@ -1,4 +1,4 @@
-# REPO NAME: EagleTemplate-new
+# REPO NAME: MRCS-ODX4
 ## License: Creative Commons Attribution-NonCommercial-ShareAlike
 
 The ODX-4 has been updated to version 2.0. Based on customer feedback, and our design and installation experience, the changes were made to provide more efficient and flexible physical layout of some components.  Rev 2.0 boards are 100% backward compatible with older versions. No software changes are needed.
