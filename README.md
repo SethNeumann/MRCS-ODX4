@@ -1,33 +1,16 @@
 # REPO NAME: EagleTemplate-new
-## License: CERN Open Hardware Licence v1.2
 ## License: Creative Commons Attribution-NonCommercial-ShareAlike
 
-Delete one of the license lines above, and replace this line and following with the contents of the doc.md file
+The ODX-4 has been updated to version 2.0. Based on customer feedback, and our design and installation experience, the changes were made to provide more efficient and flexible physical layout of some components.  Rev 2.0 boards are 100% backward compatible with older versions. No software changes are needed.
 
-### How to use this template:
+- Board size 2.7" x 3.9" 69 x 100 mm
 
-  1. Create a repo using this template, 
-  2. Use eagle to create your project
-  3. Edit the other text files to describe your project
-  4. git add .
-  5. git commit -m "add to git"
-  6. git tag -a 1.0 -m 1.0
-  7. git push origin 1.0
-  
+- The board can be split into two DCC sections by cutting the SPLIT pad jumper trace.
 
-This is a template for new eagle designs.
-It includes a blank schematic with a title block ready for editing and a
-default PCB that uses the SPCoast.lbr's BOARD component, Fiducials and an OSHW logo.
+- DCC Bus connections are 5 mm screw terminal blocks.
 
-First line: A short description of the project, used as a subtitle or tagline
+- A power, Ground, and Detector connection is provided on a 6-position .100 (2.54 mm) screw terminal block.
 
-Remaining lines: a verbose changelog of what makes this "git version" different from the last.
-Use this space (in Markdown format) to describe the context and details of the changes.
-This section should be 5 to 20 lines of interesting detail; each version tab in the project will 
-display this text to help the reader understand why this version is differnet...
+The ODX4 provides an economical and convenient mounting for up to four cpOD-M detectors or DCC_OD "Optimized Detectors."  0.156 screw terminals are provided for 12V power, ground, DCC, and four logic outputs, one for each detector position.  DCC_OD are available as boards from JLC Enterprises.
 
-The published project on the SPCoast.github.io website will
-include the relevant git commit messages as a terse, high level
-changelog, so don't replicate those messages here.
-
-
+The ODX4 mounts in our DIN-Rail snap track.
