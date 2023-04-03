@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="2" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -434,6 +434,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -556,25 +559,10 @@ design rules under a new name.</description>
 <wire x1="57.15" y1="50.8" x2="69.85" y2="50.8" width="1.27" layer="16"/>
 <wire x1="69.85" y1="50.8" x2="69.85" y2="45.72" width="1.27" layer="16"/>
 </signal>
-<signal name="S$7">
-<wire x1="66.04" y1="46.355" x2="66.04" y2="55.88" width="0.6096" layer="1"/>
-</signal>
-<signal name="S$12">
-<wire x1="16.51" y1="48.26" x2="66.04" y2="48.26" width="0.6096" layer="16"/>
-<wire x1="16.51" y1="48.26" x2="16.51" y2="45.72" width="0.6096" layer="16"/>
-<wire x1="66.04" y1="48.26" x2="66.04" y2="45.72" width="0.6096" layer="16"/>
-</signal>
 <signal name="S$14">
 <wire x1="66.04" y1="11.43" x2="66.04" y2="13.97" width="0.6096" layer="16"/>
 <wire x1="16.51" y1="11.43" x2="66.04" y2="11.43" width="0.6096" layer="16"/>
 <wire x1="16.51" y1="11.43" x2="16.51" y2="13.97" width="0.6096" layer="16"/>
-</signal>
-<signal name="S$10">
-<wire x1="24.13" y1="16.51" x2="24.13" y2="19.05" width="0.6096" layer="16"/>
-<wire x1="24.13" y1="19.05" x2="24.13" y2="43.18" width="0.6096" layer="16"/>
-<wire x1="73.66" y1="19.05" x2="24.13" y2="19.05" width="0.6096" layer="16"/>
-<wire x1="73.66" y1="16.51" x2="73.66" y2="19.05" width="0.6096" layer="16"/>
-<wire x1="73.66" y1="19.05" x2="73.66" y2="43.18" width="0.6096" layer="16"/>
 </signal>
 <signal name="S$9">
 <wire x1="81.28" y1="16.51" x2="85.09" y2="16.51" width="0.6096" layer="16"/>
@@ -607,6 +595,11 @@ design rules under a new name.</description>
 <vertex x="97.79" y="68.58"/>
 <vertex x="0" y="68.58"/>
 </polygon>
+<wire x1="66.04" y1="46.355" x2="66.04" y2="55.88" width="0.6096" layer="1"/>
+<wire x1="16.51" y1="48.26" x2="66.04" y2="48.26" width="0.6096" layer="16"/>
+<wire x1="16.51" y1="48.26" x2="16.51" y2="45.72" width="0.6096" layer="16"/>
+<wire x1="66.04" y1="48.26" x2="66.04" y2="45.72" width="0.6096" layer="16"/>
+<wire x1="66.04" y1="45.72" x2="66.04" y2="46.355" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="S$11">
 <wire x1="81.28" y1="45.72" x2="81.28" y2="53.34" width="0.6096" layer="1"/>
@@ -625,10 +618,16 @@ design rules under a new name.</description>
 <wire x1="49.53" y1="62.23" x2="71.12" y2="62.23" width="0.6096" layer="1"/>
 <wire x1="49.53" y1="39.37" x2="49.53" y2="62.23" width="0.6096" layer="1"/>
 </signal>
-<signal name="S$15">
+<signal name="VIN">
 <wire x1="68.58" y1="55.88" x2="68.58" y2="52.705" width="0.6096" layer="16"/>
 <wire x1="68.58" y1="52.705" x2="73.66" y2="52.705" width="0.6096" layer="16"/>
 <wire x1="73.66" y1="52.705" x2="73.66" y2="45.72" width="0.6096" layer="16"/>
+<wire x1="24.13" y1="16.51" x2="24.13" y2="19.05" width="0.6096" layer="16"/>
+<wire x1="24.13" y1="19.05" x2="24.13" y2="43.18" width="0.6096" layer="16"/>
+<wire x1="73.66" y1="19.05" x2="24.13" y2="19.05" width="0.6096" layer="16"/>
+<wire x1="73.66" y1="16.51" x2="73.66" y2="19.05" width="0.6096" layer="16"/>
+<wire x1="73.66" y1="19.05" x2="73.66" y2="43.18" width="0.6096" layer="16"/>
+<wire x1="73.66" y1="43.18" x2="73.66" y2="45.72" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="S$21">
 <contactref element="SECTB" pad="1"/>
